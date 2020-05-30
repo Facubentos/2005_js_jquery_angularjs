@@ -77,12 +77,11 @@ x === y   =>    false
 ===  => exactamente igual
 <
 >
->>   5 >> 1      =>   0101 >> 1   = 0010   =>   2
-<<
+!=
+!==
 >=
 <=
 */
-
 
 // tipos de datos
 var x = 5; // numero
@@ -105,4 +104,10 @@ function suma(num1, num2) {
     return num1 + num2 + z - z;
 }
 
-var sumatoria = suma(4, 6); => 10
+var sumatoria = suma(4, 6); // => 10
+
+// Ejercicio
+// desarrollar un página web donde se ponga en práctica lo estudiado en clases
+// sea creativo como todo buen desarrollador
+
+// dcervantes@ibec.edu.uy
