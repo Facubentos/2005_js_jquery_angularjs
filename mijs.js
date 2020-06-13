@@ -1,5 +1,3 @@
-import { type } from "os";
-
 document.getElementById("clase1").innerHTML = "Hola Mundo";
 
 document.write("AngularJS == version 1 de Angular");
@@ -90,7 +88,7 @@ var x = "5"; // texto
 var x; // undefined
 var x = true // boolean
 var x = ['azul', 'rojo', 'verde']; // arreglo o matriz
-var x = { nombre: 'Damian', apellido: 'Cervantes', email: 'dcervantes@ibec.edu.uy' } // objeto
+var x = { nombre: 'Damian', apellido: 'Cervantes', email: 'dcervantes@ibec.edu.uy', edad: 36 } // objeto
 var x = null;
 
 
