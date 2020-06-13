@@ -133,6 +133,36 @@ while (contador < colores.length) {
 
 
 // do while
-do {
-    // algoritmo
-} while (condición);
+// do {
+//     // algoritmo
+// } while (condición);
+
+// 1 => Mostrar en pantalla el nombre completo de la persona 'Apellido, Nombre'
+var alumnos = [
+    { nombre: "Enrique", apellidos: "Perugorria" },
+    { nombre: "Jorge", apellidos: "Salsamendi" },
+    { nombre: "Matías", apellidos: "Rampoldi" },
+    { nombre: "Melania Katherine", apellidos: "La Rosa" },
+    { nombre: "Nicolás", apellidos: "Pólvora" },
+    { nombre: "Pablo", apellidos: "Riveiro" },
+];
+
+for (var i = 0; i < alumnos.length; i++) {
+    console.log(alumnos[i].apellidos + ', ' + alumnos[i].nombre);
+}
+
+for (alumno of alumnos) {
+    console.log(alumno.apellidos + ', ' + alumno.nombre);
+}
+
+// 2 => Realice una función que dado un número calcule su factorial.
+// Ej 4 => factorial = 4 * 3* 2 * 1
+function factorial(numero) {
+    var factorial = 1;
+    for (var i = 1; i <= numero; i++) {
+        factorial *= i; // => factorial = factorial * i
+    }
+    return factorial;
+}
+
+console.log(factorial(100));
