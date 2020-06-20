@@ -2,7 +2,7 @@ document.getElementById("clase1").innerHTML = "Hola Mundo";
 
 document.write("AngularJS == version 1 de Angular");
 
-alert("esto es un alert!!!");
+// alert("esto es un alert!!!");
 
 console.log("Esto es un mensaje para consola");
 
@@ -21,7 +21,7 @@ var nombreCompleto = "Damian" + " " + "Cervantes";
 
 var num = "50";
 var num2 = 100;
-var suma = num2 + num;
+// var suma = num2 + num;
 
 // operadores  aritmeticos
 /*
@@ -48,6 +48,13 @@ var suma = num2 + num;
 **=  =>  a **= b   =>   a = a ** b
 */
 
+
+var x = 50;
+var y = 60;
+document.getElementById("clase2").innerHTML = x += y; // x = x + y;
+document.getElementById("clase3").innerHTML = nombre += apellido; // x = x + y;
+
+
 // operadores lógicos
 /*
 && => and
@@ -61,8 +68,8 @@ typeof   => retorna el tipo de una variable
 instanceof => retorna verdadero si la variable es una instancia de la clase con la que se compara
 */
 
-var x = 5;
-var y = "5";
+// var x = 5;
+// var y = "5";
 
 /*
 x == y   =>   true
@@ -82,14 +89,14 @@ x === y   =>    false
 */
 
 // tipos de datos
-var x = 5; // numero
-var x = 5.3; // decimal
-var x = "5"; // texto
-var x; // undefined
-var x = true // boolean
-var x = ['azul', 'rojo', 'verde']; // arreglo o matriz
-var x = { nombre: 'Damian', apellido: 'Cervantes', email: 'dcervantes@ibec.edu.uy', edad: 36 } // objeto
-var x = null;
+// var x = 5; // numero
+// var x = 5.3; // decimal
+// var x = "5"; // texto
+// var x; // undefined
+// var x = true // boolean
+// var x = ['azul', 'rojo', 'verde']; // arreglo o matriz
+// var x = { nombre: 'Damian', apellido: 'Cervantes', email: 'dcervantes@ibec.edu.uy', edad: 36 } // objeto
+// var x = null;
 
 
 // funciones
@@ -97,12 +104,23 @@ function nombre() {
     // implementacion de la logica del algoritmo
 };
 
-function suma(num1, num2) {
-    var z = 500; // variable local
-    return num1 + num2 + z - z;
-}
+var sumatoria = suma(4, 6);
 
-var sumatoria = suma(4, 6); // => 10
+function suma(num1, num2) {
+    // var z = 500; // variable local
+    return num1 + num2; // + z - z;
+};
+
+console.log(sumatoria);
+
+function multiplicar(a, b) {
+    console.log(a * b);
+};
+
+multiplicar(4, 5);
+
+
+
 
 // Ejercicio
 // desarrollar un página web donde se ponga en práctica lo estudiado en clases
