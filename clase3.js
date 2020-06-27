@@ -9,16 +9,22 @@ console.log("2 " + fecha2);
 var fecha3 = new Date(1988, 04, 05, 10, 20, 45, 30);
 console.log("3 " + fecha3.toDateString());
 
+// Date(año, mes, dia, hora, minutos)
+var fecha31 = new Date(1988, 04, 05, 10, 20);
+
+
+
 var fecha4 = new Date("October 25, 1988");
 console.log("4 " + fecha4.toUTCString());
 
 // ISO MM-DD-YYYY
 var fecha5 = new Date("2020-06-16");
 
+
+
 // booleano   => verdadero (true)(1) o falso (false)(0)
 var mesJunio = true;
 var mesJulio = false;
-
 
 // comparaciones
 // == =>  mes == 'Junio'  => true
@@ -35,14 +41,16 @@ var mesJulio = false;
 
 var edad = 40;
 // operador ternario
+// si se cumple la condicion ? 'entonces' ejecutar esto : 'sino' ejecutar esto
 var esMayorEdad = (edad > 18) ? "Es mayor de edad" : "Es menor de edad";
-
 
 // condicional IF
 // if (condicion) { 
-//    entonces se ejecuta un algoritmo } else { 
-//        se ejecuta otro algoritmo
-//    }
+//    entonces se ejecuta un algoritmo 
+// } 
+// else { 
+//    se ejecuta otro algoritmo
+// }
 
 var cliente = 'vip';
 // if
@@ -64,7 +72,7 @@ if (cliente == 'vip') {
 } else if (cliente == 'registrado') {
     'hacer un descuento del 10%'
 } else {
-    'hacer descuesto de un 2%'
+    'hacer descuento de un 2%'
 }
 
 // switch
@@ -87,7 +95,7 @@ switch (cliente) {
         'hacer un descuento del 10%';
         break;
     default:
-        'hacer descuesto de un 2%';
+        'hacer descuento de un 2%';
         break;
 }
 
@@ -137,6 +145,8 @@ while (contador < colores.length) {
 //     // algoritmo
 // } while (condición);
 
+
+
 // 1 => Mostrar en pantalla el nombre completo de la persona 'Apellido, Nombre'
 var alumnos = [
     { nombre: "Enrique", apellidos: "Perugorria" },
@@ -165,4 +175,36 @@ function factorial(numero) {
     return factorial;
 }
 
-console.log(factorial(100));
+console.log(factorial(4));
+
+// 1. crea un bucle que muestre 10 veces, en la consola, el texto Voy por la vuelta X 
+// siendo el número de vueltas desde 1 hasta 10 (no desde 0 hasta 9).
+
+// 2. A partir de una variable 'contador' con valor inicial 0, 
+// construye un bucle que se ejecute 10 veces y sume 2 a la variable 'contador' en cada iteración del bucle. 
+// Al finalizar el bucle, mostraremos en la consola el texto: 
+// El resultado es: X, siendo X el valor de la variable contador.
+
+// 3. Implemente una función que retorne el promedio (la media) de los elementos de un arreglo de números.
+
+// 4. (Grado complicación media)
+// Hacer una página web que le pregunte al usuario cuáles son sus dos películas o libros favoritos
+// mediante un formulario. Cuando esta pulse el botón enviar guardaremos la información en un arreglo,
+// lo recorreremos y mostraremos este mensaje por cada obra: 
+// "¡A mí también me encantó "OBRA"! Tenemos mucho en común humano.",
+// donde OBRA será el nombre de la obra.
+
+// 5. Teniendo los datos de estos alumnos:
+
+// María, 29 años, diseño
+// Lucía, 31 años, ingeniera química
+// Susana, 34 años, periodista
+// Rocío, 25 años, actriz
+// Inmaculada, 21 años, diseño
+
+// crear una estructura de datos en JavaScript para manejar estos datos. Use arrays y objetos para crearla.
+// crear funciones en JavaScript que nos permitan calcular de forma automática estadísticas sobre las alumnos.
+// Una función contarAlumnos que devuelve el número de alumnos en el listado.
+// Una función promedioEdad que devuelve la media de edad de listado.
+// Una función masJoven que devuelve el nombre del alumno más joven.
+// Una función cantidadDiseñadores que devuelve el número de alumnos que son diseñadores.
