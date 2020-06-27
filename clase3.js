@@ -183,7 +183,7 @@ console.log(factorial(4));
 // 2. A partir de una variable 'contador' con valor inicial 0, 
 // construye un bucle que se ejecute 10 veces y sume 2 a la variable 'contador' en cada iteración del bucle. 
 // Al finalizar el bucle, mostraremos en la consola el texto: 
-// El resultado es: X, siendo X el valor de la variable contador.
+// 'El resultado es: X', siendo X el valor de la variable contador.
 
 // 3. Implemente una función que retorne el promedio (la media) de los elementos de un arreglo de números.
 
@@ -202,7 +202,7 @@ console.log(factorial(4));
 // Rocío, 25 años, actriz
 // Inmaculada, 21 años, diseño
 
-// crear una estructura de datos en JavaScript para manejar estos datos. Use arrays y objetos para crearla.
+// crear una estructura de datos en JavaScript para manejar estos datos. Use arreglo y objetos para crearla.
 // crear funciones en JavaScript que nos permitan calcular de forma automática estadísticas sobre las alumnos.
 // Una función contarAlumnos que devuelve el número de alumnos en el listado.
 // Una función promedioEdad que devuelve la media de edad de listado.
