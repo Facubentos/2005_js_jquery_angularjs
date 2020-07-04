@@ -10,6 +10,7 @@ try {
     document.getElementById("demo").innerHTML = err.message;
 }
 
+
 function validar() {
     var mensaje, x;
     mensaje = document.getElementById("texto");
@@ -28,6 +29,7 @@ function validar() {
         document.getElementById("numero").value = "";
     }
 }
+
 
 // Math => permite realizar tareas matemáticas
 document.write("<br>");
