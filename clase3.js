@@ -179,13 +179,31 @@ console.log(factorial(4));
 
 // 1. crea un bucle que muestre 10 veces, en la consola, el texto Voy por la vuelta X 
 // siendo el número de vueltas desde 1 hasta 10 (no desde 0 hasta 9).
+for (var i = 1; i <= 10; i++) {
+    console.log('Voy por la vuelta ' + i);
+}
+
 
 // 2. A partir de una variable 'contador' con valor inicial 0, 
 // construye un bucle que se ejecute 10 veces y sume 2 a la variable 'contador' en cada iteración del bucle. 
 // Al finalizar el bucle, mostraremos en la consola el texto: 
 // 'El resultado es: X', siendo X el valor de la variable contador.
+var contador = 0;
+for (var i = 1; i <= 10; i++) {
+    contador += 2;
+}
+console.log('El resultado es: ' + contador);
 
 // 3. Implemente una función que retorne el promedio (la media) de los elementos de un arreglo de números.
+function promedio(arreglo) {
+    var sumatoria = 0;
+    for (item of arreglo) {
+        sumatoria += item;
+    }
+    return sumatoria / arreglo.length;
+}
+
+console.log(promedio([2, 2, 2, 2]));
 
 // 4. (Grado complicación media)
 // Hacer una página web que le pregunte al usuario cuáles son sus dos películas o libros favoritos
@@ -193,6 +211,15 @@ console.log(factorial(4));
 // lo recorreremos y mostraremos este mensaje por cada obra: 
 // "¡A mí también me encantó "OBRA"! Tenemos mucho en común humano.",
 // donde OBRA será el nombre de la obra.
+
+function procesarFomulario() {
+    var arreglo = [];
+    arreglo.push(document.getElementById("peli").value);
+    arreglo.push(document.getElementById("libro").value);
+    for (item of arreglo) {
+        console.log('¡A mí también me encantó ' + item + '! Tenemos mucho en común humano.');
+    }
+}
 
 // 5. Teniendo los datos de estos alumnos:
 
@@ -208,3 +235,48 @@ console.log(factorial(4));
 // Una función promedioEdad que devuelve la media de edad de listado.
 // Una función masJoven que devuelve el nombre del alumno más joven.
 // Una función cantidadDiseñadores que devuelve el número de alumnos que son diseñadores.
+var alumnos = [
+    { nombre: "María", edad: 29, especialidad: "diseño" },
+    { nombre: "Lucía", edad: 31, especialidad: "ingeniera química" },
+    { nombre: "Susana", edad: 34, especialidad: "periodista" },
+    { nombre: "Rocío", edad: 25, especialidad: "actriz" },
+    { nombre: "Inmaculada", edad: 21, especialidad: "diseño" },
+];
+
+function contarAlumnos(alumnos) {
+    return alumnos.length;
+}
+console.log('El número de alumnos es ' + contarAlumnos(alumnos));
+
+function promedioEdad(arreglo) {
+    var sumatoria = 0;
+    for (item of arreglo) {
+        sumatoria += item.edad;
+    }
+    return sumatoria / arreglo.length;
+}
+console.log('La edad media es ' + promedioEdad(alumnos));
+
+function masJoven(arreglo) {
+    var menorEdad = 150;
+    var posicion = 0;
+    for (var i = 0; i < arreglo.length; i++) {
+        if (arreglo[i].edad < menorEdad) {
+            menorEdad = arreglo[i].edad;
+            posicion = i;
+        }
+    }
+    return arreglo[posicion];
+}
+console.log('El más joven es ' + masJoven(alumnos).nombre);
+
+function cantidadDisenadores(arreglo) {
+    var sumatoria = 0;
+    for (item of arreglo) {
+        if (item.especialidad == 'diseño') {
+            sumatoria++;
+        }
+    }
+    return sumatoria;
+}
+console.log('La cantidad de diseñadores es: ' + cantidadDisenadores(alumnos));
