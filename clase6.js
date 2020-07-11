@@ -44,7 +44,4 @@ $(function() {
     // animaciones => animate()
     // cambios de estilos visuales css()  addClass()  removeClass()   toggleClass()
     // pequeño formulario con entrada de un un color y en función de ese color se pinte todo el fondo de la página
-
-
-
 });

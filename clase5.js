@@ -5,7 +5,7 @@
 // // $select().action();
 
 // // selector de etiquetas HTML
-// $("p").hide();  // ocultar todos los párrafos de la página web
+// $("p").hide(); // ocultar todos los párrafos de la página web
 // $("div").hide();
 
 // // selector de clases
@@ -56,44 +56,44 @@
 // blur => el usuario abandona un elemento del formulario
 
 $(function() {
-    $("button").dblclick(function() {
-        // $("p").hide();
-        // $("#primero").hide();
-        $(".segundo").hide(3000);
-    });
+    // $("button").dblclick(function() {
+    //     // $("p").hide();
+    //     $("#primero").hide();
+    //     $(".segundo").hide(3000);
+    // });
     // $("#primero").mouseenter(function() {
-    //     alert("esá entrando al segundo párrafo");
+    //     alert("esá entrando al primer párrafo");
     // });
     // $(".segundo").mouseleave(function() {
     //     alert("por favor no se vaya");
     // });
-    $("#primero").hover(function() {
-        alert("esá entrando al segundo párrafo");
-    }, function() {
-        alert("por favor no se vaya");
-    });
+    // $("#primero").hover(function() {
+    //     alert("esá entrando al segundo párrafo");
+    // }, function() {
+    //     alert("por favor no se vaya");
+    // });
     // $("input").focus(function() {
     //     $(this).css("background-color", "tomato");
     // });
     // $("input").blur(function() {
     //     $(this).css("background-color", "white");
     // });
-    $("input").on({
-        focus: (function() {
-            $(this).css("background-color", "tomato");
-        }),
-        blur: (function() {
-            $(this).css("background-color", "white");
-        })
-    });
+    // $("input").on({
+    //     focus: (function() {
+    //         $(this).css("background-color", "tomato");
+    //     }),
+    //     blur: (function() {
+    //         $(this).css("background-color", "white");
+    //     })
+    // });
 
-    $("span").click(function() {
-        $("p").show(2000);
-    });
+    // $("span").click(function() {
+    //     $("p").show(2000);
+    // });
 
-    $("#toggle").click(function() {
-        $("#primero").toggle(2000);
-    });
+    // $("#toggle").click(function() {
+    //     $("#primero").toggle(2000);
+    // });
 
     $("#fadein").click(function() {
         $("#div1").fadeIn();
@@ -112,6 +112,7 @@ $(function() {
         $("#div2").fadeToggle("slow");
         $("#div3").fadeToggle(3000);
     });
+
     $("#slide").click(function() {
         $("#texto").slideDown("slow");
     });
@@ -122,3 +123,16 @@ $(function() {
         $("#texto").slideToggle("slow");
     });
 });
+
+/* Ejercicios
+ 1. Disponer de dos párrafos. Capturar el evento click solo del primero utilizando la librería jQuery.
+
+ 2. Agregar una tabla con dos filas. Cambiar el color de uan fila fondo cuando sea presionada con el mouse.
+
+ 3. Mostrar una lista no ordenada con 4 elementos 'li'. Ocultar el que se presiona. 
+ Para ocultar un elemento jQuery tiene un método llamado hide().
+
+ 4. En la tabla cambiar el color del interior de la casilla cuando ingresamos con el mouse
+ y regresarla al original cuando salimos.
+
+*/
