@@ -33,9 +33,17 @@ $(function() {
         // $("#btnhtml").remove();
         // $("#div1").empty();
         // $("#texto").addClass("color_fondo");
-
     });
 
+    // Ejercicio (entrega antes del miércoles 15) dcervantes@ibec.edu.uy
+    // Desarrollar una página Landing Page:
+    // contenido libre
+    // imagen de banner
+    // menu animado (cuando se pase por encima de un elemento del menu se debe cambiar de color)
+    // secciones...
+    // animaciones => animate()
+    // cambios de estilos visuales css()  addClass()  removeClass()   toggleClass()
+    // pequeño formulario con entra de un un color y en funcio de ese color se pinte todo el fondo de la pagina
 
 
 
