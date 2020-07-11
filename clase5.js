@@ -127,12 +127,19 @@ $(function() {
 /* Ejercicios
  1. Disponer de dos párrafos. Capturar el evento click solo del primero utilizando la librería jQuery.
 
- 2. Agregar una tabla con dos filas. Cambiar el color de uan fila fondo cuando sea presionada con el mouse.
+ 2. Agregar una tabla con dos filas. Cambiar el color de fondo de una fila cuando sea presionada con el mouse.
 
  3. Mostrar una lista no ordenada con 4 elementos 'li'. Ocultar el que se presiona. 
  Para ocultar un elemento jQuery tiene un método llamado hide().
 
  4. En la tabla cambiar el color del interior de la casilla cuando ingresamos con el mouse
  y regresarla al original cuando salimos.
+
+ 5. Agregar dos inputs de tipo text con algún contenido. Fijar la fuente en color azul.
+ Al tomar foco el control, cambiar a color rojo.
+
+ 6. *** Agregar un div con un dos párrafos. 
+ Cuando se presione con el mouse dentro del div ocultarlo por decoloración
+ y cuando esté completamente oculto hacer que aparezca lentamente otro bloque.
 
 */
