@@ -138,7 +138,7 @@ $(function() {
  5. Agregar dos inputs de tipo text con algún contenido. Fijar la fuente en color azul.
  Al tomar foco el control, cambiar a color rojo.
 
- 6. *** Agregar un div con un dos párrafos. 
+ 6. *** Agregar un div con dos párrafos. 
  Cuando se presione con el mouse dentro del div ocultarlo por decoloración
  y cuando esté completamente oculto hacer que aparezca lentamente otro bloque.
 
