@@ -184,7 +184,7 @@
 
 6. Realiza un script que oculte y muestre un div de forma rápida (fast).
 
-7. Implementa una página que contenga una lista con cuatro ítems.
+7. Implementa una página que contenga una lista con cuatro ítems. **
     Realiza los siguientes casos:
         A) Eliminar la lista completa.
         B) Restaurar lista.
@@ -195,20 +195,21 @@
         G) Eliminar el primero y segundo elemento.
         H) Eliminar los dos últimos.
 
-8. Busca información en la API de jQuery sobre el método prop.
+8. Busca información en la API de jQuery sobre el método prop. **
     A) ¿Qué diferencia existe con attr?
     B) ¿Cuándo se usa?
 
-9. Realiza un Listado de FAQs con las siguientes condiciones:
+9. Realiza un Listado de FAQs con las siguientes condiciones: **
     A) Los enlaces a las FAQs deben aparecer de color azul.
     B) Cuando pulse en una pregunta, debe cerrar la anterior (si es que la había) y mostrar la respuesta (añadiéndole una R al principio)
     C) Los enlaces ya visitados se pondrán de color rojo.
 
 10. Realice una galería fotográfica.
-Al seleccionar una de las imágenes, el resto deben pasar a tener una opacidad de 0.4 y la seleccionada tendrá un especial énfasis con el efecto que prefieras.
+Al seleccionar una de las imágenes, el resto deben pasar a tener una opacidad de 0.4 y la seleccionada
+ tendrá un especial énfasis con el efecto que prefieras. **
 
-11. Desarrolla un juego de memoria. 
-Para ello deberá de tener una serie de imágenes que se darán la vuelta de 2 en 2. 
+11. Desarrolla un juego de memoria. ****
+Para ello deberá de tener una serie de imágenes (4*3) que se darán la vuelta de 2 en 2. 
 Si la imagen es igual, se mantendrán visibles.
 El juego acabará cuando todas las imágenes estén descubiertas.
 Añada la funcionalidad que estime oportuna.
