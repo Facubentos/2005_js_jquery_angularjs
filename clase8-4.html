@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicios DOM Básicos</title>
+    <style type="text/css">
+        .rectangulo {
+            width: 800px;
+            height: 70px;
+            background-color: #00ff00;
+        }
+        
+        .cuadrado {
+            width: 250px;
+            height: 250px;
+            background-color: #ff0000;
+        }
+    </style>
+    <script src="./jquery-3.2.1.js"></script>
+    <script>
+        window.onload = function() {
+            $('div').on('dblclick', function() {
+                // Primero cambio la clase actual
+                $(this).toggleClass('cuadrado rectangulo');
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <div class="rectangulo"></div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mostrar y Ocultar div</title>
+    <style type="text/css">
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            border: 3px groove #000000;
+        }
+    </style>
+    <script src="./jquery-3.2.1.js"></script>
+    <script>
+        window.onload = function() {
+            $('div').hide('fast').show('fast');
+        }
+    </script>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
