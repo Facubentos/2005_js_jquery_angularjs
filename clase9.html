@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/angular.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script> -->
+    <style>
+        input.ng-invalid {
+            background-color: lightcoral;
+        }
+        /* ng-empty */
+        /* ng-not-empty */
+        /* ng-touched */
+        /* ng-untouched */
+        /* ng-valid */
+    </style>
+</head>
+
+<body>
+
+    <!-- PascualCase => MmmmmMmmmm; => Clases -->
+    <!-- camelCase => mmmmmMmmmm; => variables -->
+
+    <!-- <div ng-app="eApp" ng-controller="eControl" ng-init="nombre = 'Pedro'"> -->
+    <div ng-app="eApp" ng-controller="eControl">
+        <form name="formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" ng-model="nombre" id="nombre">
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" ng-model="apellido" id="apellido">
+            <br>
+            <label for="color_favorito">Color Favorito</label>
+            <select id="color_favorito">
+                <option ng-repeat="color in colores" value="color">{{ color | uppercase }}</option>
+            </select>
+            <br>
+            <label for="correo">eMail</label>
+            <input type="email" ng-model="correo" id="correo" name="email">
+            <br>
+            <span ng-show="formulario.email.$error.email">
+                No es un correo válido
+            </span>
+            <!-- <button type="reset" ng-show="formulario.email.$valid"></button> -->
+            <button type="button" ng-click="onGuardar()">Enviar</button>
+        </form>
+        <br>
+        <p ng-bind="nombre + ' ' + apellido"></p>
+        <p style="color: {{ color }}">{{ nombre + ' ' + apellido | lowercase }}</p>
+
+        <span>La suma de 15 y 26 = {{ 15 + 26 }}</span>
+        <p>Usted ha compra por el valor de {{ precio * cantidad | currency }} pesos.</p>
+        <p>Accediendo al obejto persona: {{ persona.nombre + ' ' + persona.apellido }}</p>
+        <p>Accediendo al valor del segundo elemento de un arreglo: {{ colores[1] }}</p>
+        <ul>
+            <li ng-repeat="color in colores ">{{ color }}</li>
+        </ul>
+        <ol>
+            <li ng-repeat="alumno in alumnos | orderBy:'nombre'"> {{ alumno.nombre + ' ' + alumno.apellido }} </li>
+        </ol>
+    </div>
+
+
+    <script src="clase9/eApp.js"></script>
+    <script src="clase9/eControl.js"></script>
+</body>
+
+</html>
