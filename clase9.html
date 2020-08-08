@@ -16,6 +16,18 @@
         /* ng-touched */
         /* ng-untouched */
         /* ng-valid */
+        
+        .cargando {
+            background-color: cadetblue;
+            color: black;
+            border-radius: 10px;
+        }
+        
+        .cargado {
+            background-color: black;
+            color: cadetblue;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -34,9 +46,7 @@
             <input type="text" ng-model="apellido" id="apellido">
             <br>
             <label for="color_favorito">Color Favorito</label>
-            <select id="color_favorito">
-                <option ng-repeat="color in colores" value="color">{{ color | uppercase }}</option>
-            </select>
+            <select id="color_favorito" ng-model="selectedColor" ng-options="item for item in colores" value="item"></select>
             <br>
             <label for="correo">eMail</label>
             <input type="email" ng-model="correo" id="correo" name="email">
@@ -56,11 +66,30 @@
         <p>Accediendo al obejto persona: {{ persona.nombre + ' ' + persona.apellido }}</p>
         <p>Accediendo al valor del segundo elemento de un arreglo: {{ colores[1] }}</p>
         <ul>
-            <li ng-repeat="color in colores ">{{ color }}</li>
+            <li ng-style="getColor(color)" ng-repeat="color in colores ">{{ color }}</li>
         </ul>
         <ol>
             <li ng-repeat="alumno in alumnos | orderBy:'nombre'"> {{ alumno.nombre + ' ' + alumno.apellido }} </li>
         </ol>
+        <p>La hora actual es {{ hora }}</p>
+        <img ng-src="{{ url_imagen }}" alt="Imagen">
+        <br>
+        <a ng-href="{{ url_sitio }}">IBEC</a>
+
+        <p ng-if="cargando">Cargando, por favor espere....</p>
+        <p ng-class="getClass()"> Cargando </p>
+
+        <div ng-switch="color">
+            <div ng-switch-when="tomato">
+                <p>El color es rojo</p>
+            </div>
+            <div ng-switch-when="blue">
+                <p>El color es azul</p>
+            </div>
+            <div ng-switch-default>
+                <p>Color no definido</p>
+            </div>
+        </div>
     </div>
 
 
