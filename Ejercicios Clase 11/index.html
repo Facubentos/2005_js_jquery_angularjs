@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS</title>
+    <script src="angular.min.js"></script>
+</head>
+
+<body>
+    <div ng-app="agendaApp" ng-controller="agendaCtrl">
+        <form method="POST" name="formulario">
+            <label for="tramite">Trámite</label>
+            <select name="tramite" id="tramite" ng-model="tramite">
+                <option ng-repeat="x in tramites" value="{{x}}">{{x}}</option>
+            </select>
+            <br>
+            <label for="nombreCompleto">Nombre y Apellidos</label>
+            <input type="text" id="nombreCompleto" name="nombreCompleto" ng-model="nombreCompleto">
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" ng-model="edad">
+            <br>
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" ng-model="fecha">
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="notificacion"></div>
+        <div id="tabla"></div>
+        <script src="js.js"></script>
+    </div>
+</body>
+
+</html>
